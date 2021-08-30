@@ -16,9 +16,10 @@ module.exports = {
     logo: '/nustar-vue.svg',
     sidebar: [
       {
-        title: '指南', // 必要的
+        text: '指南', // 必要的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
+        link:'/guide/',
         children: [
           '/guide/',
           '/guide/update',
@@ -35,7 +36,7 @@ module.exports = {
         ],
       },
       {
-        title: '组件', // 必要的
+        text: '组件', // 必要的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
@@ -45,21 +46,21 @@ module.exports = {
         ],
       },
       {
-        title: '测试', // 必要的
+        text: '测试', // 必要的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: ['/tests/unit', '/tests/e2e'],
       },
       {
-        title: '进阶', // 必要的
+        text: '进阶', // 必要的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: ['/advanced/material'],
       },
       {
-        title: '实用方法',
-        path: '/utils/',
-        collapsable: true,
+        text: '实用方法',
+        link: '/utils/',
+        collapsable: false,
         sidebarDepth: 2,
       },
     ],
