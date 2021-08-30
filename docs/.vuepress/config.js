@@ -1,6 +1,10 @@
 module.exports = {
-  title: 'Nustar vuetify front-end framework docs',
-  description: 'Docs',
+  head: [
+    ['link', { rel: 'icon', href: '/nustar-vue.svg' }]
+  ],
+  lang: 'zh-CN',
+  title: 'NuStar Admin Frontend Template',
+  description: 'Documentation of NuStar Admin Frontend Template',
   configureWebpack: {
     resolve: {
       alias: {
@@ -11,6 +15,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
+        logo: '/nustar-vue.svg',
         title: '指南', // 必要的
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1, // 可选的, 默认值是 1
