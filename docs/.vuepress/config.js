@@ -1,6 +1,6 @@
 module.exports = {
   head: [
-    ['link', { rel: 'icon', href: '/nustar-vue.svg' }]
+    ['link', { rel: 'icon', href: 'nustar-vue.svg' }]
   ],
   lang: 'zh-CN',
   base: '/nustar-admin-template-docs/',
