@@ -34,7 +34,6 @@ module.exports = {
           "/guide/i18n",
           "/guide/codeQuality",
           "/guide/experiences",
-          "/guide/distribution",
         ],
       },
       {
