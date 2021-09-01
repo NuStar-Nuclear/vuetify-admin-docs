@@ -13,6 +13,10 @@ module.exports = {
   },
   themeConfig: {
     logo: "/nustar-vue.svg",
+    navbar: [
+      { text: "指南", link: "/guide/" },
+      { text: "公司官网", link: "http://www.nustarnuclear.com" },
+    ],
     sidebar: [
       {
         text: "指南", // 必要的
