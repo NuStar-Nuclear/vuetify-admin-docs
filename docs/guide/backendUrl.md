@@ -2,7 +2,7 @@
 
 新建`/public/config.json`，此文件是被 git 忽略掉的。
 
-输入以下内容保存，api 的值为后端的 baseUrl。
+输入以下内容保存，API 的值为后端的 baseUrl。
 
 ```json
 {

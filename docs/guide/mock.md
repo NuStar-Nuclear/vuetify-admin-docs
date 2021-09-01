@@ -18,7 +18,7 @@
 import { Response, Request } from 'express'
 const userList: UserType[] = [...]  // 编的一些假用户
 export const getUserByName = (req: Request, res: Response) => {
-  const { username } = req.params // api上的参数在，req.params中，而
+  const { username } = req.params // API上的参数在，req.params中，而
   for (const user of userList) {
     if (user.username === username) {
       return res.json(user)
@@ -32,7 +32,7 @@ export const getUserByName = (req: Request, res: Response) => {
 ```
 
 :::tip
-api 上的参数在 req.params 中，
+API 上的参数在 req.params 中，
 而 url 末尾紧跟`？`的参数例如`?email=123@test.com`在`req.query`中,
 `axios`请求中的`data`就是`req.body`
 :::

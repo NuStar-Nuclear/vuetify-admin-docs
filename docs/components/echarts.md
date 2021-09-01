@@ -54,7 +54,7 @@ export default class extends Mixin(ChartMixin) {
 | `accent`       |            `string`            | `accent`颜色字符串                                                                     |
 | `infoColor`    |            `string`            | `info`颜色字符串                                                                       |
 
-## api
+## API
 
 `toolTipFormatter` 返回[echarts.option.tooltip.formatter](https://echarts.apache.org/zh/option.html#tooltip.formatter)的方法工厂
 

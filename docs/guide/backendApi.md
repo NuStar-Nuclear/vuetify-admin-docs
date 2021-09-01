@@ -1,10 +1,10 @@
-# 后端 api
+# 后端 API
 
-所有 api 放置在`/src/api`目录下
+所有 API 放置在`/src/api`目录下
 
-## api 格式
+## API 格式
 
-每个 api 文件前先导入全局配置好的 request 方法
+每个 API 文件前先导入全局配置好的 request 方法
 
 ```ts
 import request from "@/utils/request";
