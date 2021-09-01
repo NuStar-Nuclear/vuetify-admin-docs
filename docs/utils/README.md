@@ -1,9 +1,11 @@
+# 实用方法
+
 ## `Message`
 
 全局消息
 
 ```ts
-import { Message } from '@/utils/message'
+import { Message } from "@/utils/message";
 ```
 
 #### `Message.info(text: string)` 通知
@@ -21,7 +23,7 @@ import { Message } from '@/utils/message'
 公用的格式化集
 
 ```ts
-import { formatters } from '@/utils/formatter'
+import { formatters } from "@/utils/formatter";
 ```
 
 #### `formatters.`
@@ -58,18 +60,18 @@ async downloadReport() {
 :::
 
 ```ts
-import { Role } from '@/api/types'
-import UserModule from '@/store/modules/user'
+import { Role } from "@/api/types";
+import UserModule from "@/store/modules/user";
 declare function isPermitted(
   allowedRoles: Role[],
   roles: Role[] = UserModule.roles
-): boolean
+): boolean;
 ```
 
 ```ts
-import { isPermitted } from '@/utils/permission'
-import UserModule from '@/store/modules/user'
-const allowRoles = ['admin']
-const currentRoles = ['staff']
-const accessible = isPermitted(allowRoles, currentRoles) // False 因为staff<admin
+import { isPermitted } from "@/utils/permission";
+import UserModule from "@/store/modules/user";
+const allowRoles = ["admin"];
+const currentRoles = ["staff"];
+const accessible = isPermitted(allowRoles, currentRoles); // False 因为staff<admin
 ```

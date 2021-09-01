@@ -1,4 +1,4 @@
-### Inputs with validation
+# Inputs with validation
 
 这些组件是`vuetify`的一些 inputs 外层包裹了一层[`vee-validate`](https://logaretm.github.io/vee-validate/)
 使用前请先熟悉`vuetify`的这些组件与`vee-validate`的用法
@@ -24,15 +24,15 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator'
+import { Vue, Component, Prop } from "vue-property-decorator";
 
 @Component({
-  name: '',
+  name: "",
 })
 export default class extends Vue {
-  name: string | null = null
-  country: string | null = null
-  countries = ['C1', 'C2']
+  name: string | null = null;
+  country: string | null = null;
+  countries = ["C1", "C2"];
 }
 </script>
 ```
@@ -53,24 +53,24 @@ export default class extends Vue {
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'vue-property-decorator'
-import { VldTextField, VldSelect } from '@/components/validateInputs'
+import { Vue, Component, Prop } from "vue-property-decorator";
+import { VldTextField, VldSelect } from "@/components/validateInputs";
 @Component({
-  name: '',
+  name: "",
   components: {
     VldTextField,
     VldSelect,
   },
 })
 export default class extends Vue {
-  name: string | null = null
-  country: string | null = null
-  countries = ['C1', 'C2']
+  name: string | null = null;
+  country: string | null = null;
+  countries = ["C1", "C2"];
 }
 </script>
 ```
 
-#### 现有的
+## 现有的
 
 `VldTextField`
 `VldDatetime`,

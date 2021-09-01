@@ -1,4 +1,4 @@
-### 动态的后端 Url 配置
+# 动态的后端 Url 配置
 
 新建`/public/config.json`，此文件是被 git 忽略掉的。
 

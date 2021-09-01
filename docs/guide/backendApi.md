@@ -1,58 +1,58 @@
-### 后端 api
+# 后端 api
 
 所有 api 放置在`/src/api`目录下
 
-### api 格式
+## api 格式
 
 每个 api 文件前先导入全局配置好的 request 方法
 
 ```ts
-import request from '@/utils/request'
+import request from "@/utils/request";
 ```
 
-#### get
+### get
 
 ```ts
 export const getUserByName = (username: string) =>
   request({
     url: `/users/${username}`,
-    method: 'get',
-  })
+    method: "get",
+  });
 ```
 
-#### post
+### post
 
 ```ts
 export const createUser = (user: IUserData) =>
   request({
-    url: '/users',
-    method: 'post',
+    url: "/users",
+    method: "post",
     data: user,
-  })
+  });
 ```
 
-#### put
+### put
 
 ```ts
 export const updateUser = (user: IUserData) =>
   request({
     url: `/users/${user.username}`,
-    method: 'put',
+    method: "put",
     data: user,
-  })
+  });
 ```
 
-#### delete
+### delete
 
 ```ts
 export const deleteUser = (user: IUserData) =>
   request({
     url: `/users/${user.username}`,
-    method: 'delete',
-  })
+    method: "delete",
+  });
 ```
 
-### 接收数据
+## 接收数据
 
 以上 api 返回的都是 AxiosReponse 类型对象，且是 Promise，有两种方式接收数据
 

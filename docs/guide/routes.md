@@ -1,9 +1,9 @@
-### 侧边栏与路由
+# 侧边栏与路由
 
 该框架使用配置文件的方式定义侧边栏，如有兴趣，实现方法可以查看`/src/views/layout/core/Drawer.vue`以及
 `/src/permission.ts`
 
-### 配置方法
+## 配置方法
 
 基本路由配置方式请参照[vue router](https://router.vuejs.org/zh/api/#routes)
 
@@ -13,46 +13,46 @@
 - meta 项,详见类型`IRouteConfig`
 
 ```ts
-export type IRouteConfig = Omit<RouteConfig, 'meta'> & {
+export type IRouteConfig = Omit<RouteConfig, "meta"> & {
   meta: {
-    icon: string // drawer item icon
-    drawerGroup?: 'admin' | 'PUC' // groups will be separated by divider line
-    title: string // drawer item text
-    roles: Role[] // authorized user groups
-    dataCy?: string // for cypress location
-    hidden?: boolean // hide this route if True
-  }
-}
+    icon: string; // drawer item icon
+    drawerGroup?: "admin" | "PUC"; // groups will be separated by divider line
+    title: string; // drawer item text
+    roles: Role[]; // authorized user groups
+    dataCy?: string; // for cypress location
+    hidden?: boolean; // hide this route if True
+  };
+};
 ```
 
 ```ts
 // /src/router/modules/your-routes.ts
-import Layout from '@/views/layout/Index.vue'
-import DemoBar from '@/views/layout/DemoBar.vue'
-import { IRouteConfig } from './types'
+import Layout from "@/views/layout/Index.vue";
+import DemoBar from "@/views/layout/DemoBar.vue";
+import { IRouteConfig } from "./types";
 
 const routes: IRouteConfig[] = [
   {
-    path: '/demo/plant-list',
+    path: "/demo/plant-list",
     component: Layout,
-    redirect: { name: 'plantList' },
+    redirect: { name: "plantList" },
     meta: {
-      title: 'nuclear.plantList',
-      icon: '$plant',
-      roles: ['developer'],
-      drawerGroup: 'PUC',
-      dataCy: 'plant-list',
+      title: "nuclear.plantList",
+      icon: "$plant",
+      roles: ["developer"],
+      drawerGroup: "PUC",
+      dataCy: "plant-list",
     },
     children: [
       {
-        name: 'plantList',
-        path: 'index',
+        name: "plantList",
+        path: "index",
         components: {
-          default: () => import('@/views/demo/forms/PlantList.vue'),
+          default: () => import("@/views/demo/forms/PlantList.vue"),
           bar: DemoBar,
         },
       },
     ],
   },
-]
+];
 ```

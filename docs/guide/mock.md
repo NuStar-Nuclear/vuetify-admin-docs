@@ -1,4 +1,4 @@
-### mock
+# mock
 
 前端单独开发时，后端不一定开发好了接口，这时就需要假数据。
 
@@ -7,7 +7,7 @@
 可以在浏览器的 devtool 中的 network 查看请求与响应完整的状态、headers 和 body。
 与后端不一样的地方在，它提供并且应该仅提供假数据，不去与数据库打交道，也不模拟复杂的业务逻辑。
 
-#### 写法
+## 写法
 
 假设你有一个 api `get /users/{username}`, 需要 mock，那么
 
@@ -41,7 +41,7 @@ api 上的参数在 req.params 中，
 
 ```ts
 // api.ts
-export * from './users'
+export * from "./users";
 ```
 
 3.在`/mock/`文件夹下的`swagger.yml`中的`paths`下配置：
@@ -51,7 +51,7 @@ export * from './users'
 paths:
   /users/{username}:
     get:
-      operationId: 'getUserByName'
+      operationId: "getUserByName"
 ```
 
 4.启动 mock-server:

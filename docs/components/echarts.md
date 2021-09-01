@@ -1,8 +1,8 @@
-### Echarts
+# Echarts
 
 通用的 Mixin `@/components/ChartMixin.ts`,
 
-#### 用法
+## 用法
 
 在你的组件中混入它，`template`中必须有一个 element 的`id`为`ChartMixin`中的`id`, 在组件类中添加一个`get option(): EChartOption {}` 方法
 
@@ -12,22 +12,22 @@
   <div :id="id" />
 </template>
 <script lang="ts">
-import { Vue, Component, Prop, Mixin } from 'vue-property-decorator'
-import ChartMixin from '@/components/ChartMixin.ts'
-import { EChartOption } from 'echarts'
+import { Vue, Component, Prop, Mixin } from "vue-property-decorator";
+import ChartMixin from "@/components/ChartMixin.ts";
+import { EChartOption } from "echarts";
 
 @Component({
-  name: 'Foo',
+  name: "Foo",
 })
 export default class extends Mixin(ChartMixin) {
   get option(): EChartOption {
-    return {}
+    return {};
   }
 }
 </script>
 ```
 
-#### props
+## props
 
 | prop       |   type    | description                                                                                    |
 | :--------- | :-------: | :--------------------------------------------------------------------------------------------- |
@@ -36,13 +36,13 @@ export default class extends Mixin(ChartMixin) {
 | `subtitle` | `string`  | title                                                                                          |
 | `height`   | `string`  | 高度，建议使用 vh                                                                              |
 
-#### data
+## data
 
 | data    |  type   | description  |
 | :------ | :-----: | :----------- |
 | `chart` | ECharts | echarts 实例 |
 
-#### computed
+## computed
 
 | computed       |              type              | description                                                                            |
 | :------------- | :----------------------------: | :------------------------------------------------------------------------------------- | ----------------------- |
@@ -54,7 +54,7 @@ export default class extends Mixin(ChartMixin) {
 | `accent`       |            `string`            | `accent`颜色字符串                                                                     |
 | `infoColor`    |            `string`            | `info`颜色字符串                                                                       |
 
-#### api
+## api
 
 `toolTipFormatter` 返回[echarts.option.tooltip.formatter](https://echarts.apache.org/zh/option.html#tooltip.formatter)的方法工厂
 
@@ -68,24 +68,24 @@ declare function toolTipFormatter<T extends { [k: string]: number }>(
   units: Record<keyof T, string>, // 每个字段的单位
   xAxisOption: { name: string; key: keyof T }, // 横坐标的name和字段名
   params: any
-): string
+): string;
 ```
 
 - 用法
 
 ```vue
 <script lang="ts">
-import { Vue, Component, Prop, Mixin } from 'vue-property-decorator'
-import ChartMixin, { toolTipFormatter } from '@/components/ChartMixin.ts'
-import { EChartOption } from 'echarts'
+import { Vue, Component, Prop, Mixin } from "vue-property-decorator";
+import ChartMixin, { toolTipFormatter } from "@/components/ChartMixin.ts";
+import { EChartOption } from "echarts";
 
 type Foo = {
-  year: string
-  height: string
-}
+  year: string;
+  height: string;
+};
 
 @Component({
-  name: 'FooChart',
+  name: "FooChart",
 })
 export default class extends Mixin(ChartMixin) {
   get option(): EChartOption {
@@ -99,13 +99,13 @@ export default class extends Mixin(ChartMixin) {
               height: (v) => v.toFixed(2),
             },
             {
-              height: 'cm',
+              height: "cm",
             },
-            { name: 'year', key: 'year' },
+            { name: "year", key: "year" },
             params
           ),
       },
-    }
+    };
   }
 }
 </script>

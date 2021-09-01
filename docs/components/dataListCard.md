@@ -1,10 +1,10 @@
-### DataListCard
+# DataListCard
 
-#### 用处
+## 用处
 
 统一的数据表，包含多级表头、排序、批量的增删改、导出为 excel、导入 excel 等便利功能。
 
-#### Props
+## Props
 
 包括但不限于以下 props
 | prop | type | description |
@@ -22,4 +22,4 @@
 | `downloadFileName` | `string` | 下载 excel 的文件名，不包含.xlsx 后缀 |
 | `cudRequestConfig` | `CudRequestConfig<T>` | 增改删各自的方法 |
 
-#### slots
+## slots
