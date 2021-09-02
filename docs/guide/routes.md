@@ -7,7 +7,7 @@
 
 基本路由配置方式请参照[vue router](https://router.vuejs.org/zh/api/#routes)
 
-- 需要说明的是利用[nested routes]('https://router.vuejs.org/zh/guide/essentials/nested-routes')的原理，
+- 需要说明的是利用[nested routes](https://router.vuejs.org/zh/guide/essentials/nested-routes)的原理，
   第一层 route 为 Layout 层，若 children 中只有唯一的 route，将不会形成多级导航，而这唯一的子路由与 Layout 形成了一个 route
   。这样的好处是 Layout 不会被重新渲染，状态得以保留，可以单独对子路由应用过渡动效。
 - meta 项,详见类型`IRouteConfig`
