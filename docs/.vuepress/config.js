@@ -1,5 +1,13 @@
 module.exports = {
-  head: [["link", { rel: "icon", href: "nustar-vue.svg" }]],
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "https://cdn.jsdelivr.net/gh/NuStar-Nuclear/resources/nustarweb/nustar-vue.svg",
+      },
+    ],
+  ],
   lang: "zh-CN",
   base: "/nustar-admin-template-docs/",
   title: "NuStar Admin Frontend Template",
