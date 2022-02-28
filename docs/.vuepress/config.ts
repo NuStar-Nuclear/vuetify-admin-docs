@@ -1,4 +1,7 @@
-module.exports = {
+import { defineUserConfig } from "vuepress";
+import type { DefaultThemeOptions } from "vuepress";
+
+export default defineUserConfig<DefaultThemeOptions>({
   head: [
     [
       "link",
@@ -12,13 +15,6 @@ module.exports = {
   base: "/vuetify-admin-docs/",
   title: "NuStar Vuetify Admin",
   description: "Documentation of NuStar Vuetify Admin",
-  configureWebpack: {
-    resolve: {
-      alias: {
-        "@alias": "path/to/some/dir",
-      },
-    },
-  },
   themeConfig: {
     logo: "/nustar-vue.svg",
     navbar: [
@@ -27,9 +23,8 @@ module.exports = {
     ],
     sidebar: [
       {
-        text: "指南", // 必要的
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
+        text: "指南",
+        collapsible: true,
         children: [
           "/guide/",
           "/guide/update",
@@ -37,6 +32,7 @@ module.exports = {
           "/guide/routes",
           "/guide/backendUrl",
           "/guide/backendApi",
+          "/guide/vuetify",
           "/guide/vuex",
           "/guide/mock",
           "/guide/i18n",
@@ -45,9 +41,8 @@ module.exports = {
         ],
       },
       {
-        text: "组件", // 必要的
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
+        text: "组件",
+        collapsible: true,
         children: [
           "/components/vldInputs",
           "/components/dataListCard.md",
@@ -55,21 +50,18 @@ module.exports = {
         ],
       },
       {
-        text: "测试", // 必要的
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
+        text: "测试",
+        collapsible: true,
         children: ["/tests/unit", "/tests/e2e"],
       },
       {
-        text: "进阶", // 必要的
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1, // 可选的, 默认值是 1
+        text: "进阶",
+        collapsible: true,
         children: ["/advanced/material"],
       },
       {
         text: "实用方法",
-        collapsable: false,
-        sidebarDepth: 1,
+        collapsible: true,
         children: ["/utils/"],
       },
     ],
@@ -89,4 +81,4 @@ module.exports = {
       },
     ],
   ],
-};
+});
