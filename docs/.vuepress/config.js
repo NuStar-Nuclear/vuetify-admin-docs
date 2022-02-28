@@ -9,9 +9,9 @@ module.exports = {
     ],
   ],
   lang: "zh-CN",
-  base: "/nustar-admin-template-docs/",
-  title: "NuStar Admin Frontend Template",
-  description: "Documentation of NuStar Admin Frontend Template",
+  base: "/vuetify-admin-docs/",
+  title: "NuStar Vuetify Admin",
+  description: "Documentation of NuStar Vuetify Admin",
   configureWebpack: {
     resolve: {
       alias: {

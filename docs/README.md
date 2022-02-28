@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /nustar-vue.svg
-heroText: NuStar Admin Template
+heroText: NuStar Vuetify Admin
 tagline: When NuStar meets Vue
 actions:
   - text: 快速上手 →
@@ -22,7 +22,7 @@ features:
 footer: XXX Licensed | Copyright © 2021-present Shanghai NuStar Nuclear Power Technology Co., Ltd.
 ---
 
-使用此框架前建议先熟悉`ECMASCRIPT6`语法,
+使用此原型项目前建议先熟悉`ECMASCRIPT6`语法,
 [Typescript](https://www.typescriptlang.org/docs/handbook/basic-types.html),
 [Vue](https://cn.vuejs.org/), [Vuex](https://vuex.vuejs.org/zh/guide/),
 [Vue Router](https://router.vuejs.org/zh/),

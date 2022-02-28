@@ -1,7 +1,7 @@
 {
-  "name": "nustar-admin-template-docs",
-  "version": "1.0.0",
-  "description": "Documentation of NuStar Admin Frontend Template",
+  "name": "nustar-vuetify-admin-docs",
+  "version": "1.1.0",
+  "description": "Documentation of NuStar Vuetify Admin",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/NuStar-Nuclear/nustar-admin-template-docs.git"
+    "url": "git+ssh://git@github.com/NuStar-Nuclear/vuetify-admin-docs.git"
   },
   "author": "Yue JIN",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NuStar-Nuclear/nustar-admin-template-docs/issues"
+    "url": "https://github.com/NuStar-Nuclear/vuetify-admin-docs/issues"
   },
-  "homepage": "https://github.com/NuStar-Nuclear/nustar-admin-template-docs#readme",
+  "homepage": "https://docs.nustarnuclear.com/vuetify-admin-docs",
   "devDependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.25",
     "vuepress": "^2.0.0-beta.25"

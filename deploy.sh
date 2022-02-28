@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:NuStar-Nuclear/nustar-admin-template-docs.git master:gh-pages
+git push -f git@github.com:NuStar-Nuclear/vuetify-admin-docs.git master:gh-pages
 
 cd -

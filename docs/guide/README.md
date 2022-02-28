@@ -3,7 +3,7 @@
 ## 安装
 
 ```shell script
-git clone http://phabricator.nustar.com/diffusion/22/nustar-vuetify-front-framework.git front-project-name
+git clone git@github.com:NuStar-Nuclear/vuetify-admin.git front-project-name
 ```
 
 ::: danger
