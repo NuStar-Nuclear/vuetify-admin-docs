@@ -1,11 +1,20 @@
-# mock
+# Mock Data
 
 前端单独开发时，后端不一定开发好了接口，这时就需要假数据。
 
-此框架使用 mock-server 启动一个 nodejs 服务。是一个真实的 http 服务，
-请求获得的响应与真实情况的响应方式并没什么不同，
-可以在浏览器的 devtool 中的 network 查看请求与响应完整的状态、headers 和 body。
-与后端不一样的地方在，它提供并且应该仅提供假数据，不去与数据库打交道，也不模拟复杂的业务逻辑。
+此项目使用 [express](https://expressjs.com/) 启动一个 nodejs 后端服务作为 mock server 来模拟业务数据。根据业务需要也可以直接将此后端作为生产环境下的后端使用。
+
+本项目 mock server 的主角是[swagger](https://swagger.io)，swagger 是一个 REST APIs 文档生成工具，它从代码注释中自动生成文档，可以跨平台，开源，支持大部分语言。swagger 后来衍生出了 OpenAPI 规范 (OAS) 为 RESTful API 定义了一个与语言无关的标准接口。许多开源库可以直接通过 OpenAPI 来生成 API 文档，甚至是直接生成各种编程语言的后端服务。
+
+## tsoa <Badge type="tip" text="new" vertical="middle" />
+
+从包含装饰器的 typescript 源代码中生成 OpenAPI，利用 jsdoc 生成接口描述等纯文本信息。自动将 express route controller 连接到 restful api 上。相当于，只需要写基于 typescript 的后端接口，就自动拥有了后端路由和 OpenAPI，而 OpenAPI 则可以通过[swagger ui](https://swagger.io/tools/swagger-ui/)自动生成可交互文档。
+
+tsoa 生成的 api 自带 runtime validator。
+
+## swagger-ui-express
+
+在启动 mock server 的同时根据 tsoa 输出的自动生成文档网站。
 
 ## 写法
 

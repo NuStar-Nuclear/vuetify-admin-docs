@@ -6,14 +6,32 @@
 git clone git@github.com:NuStar-Nuclear/vuetify-admin.git front-project-name
 ```
 
-::: danger
+::: warning 警告
 注意将你的项目远程仓库地址配置另外的地址
 :::
 
-```shell script
+::: tip 建议
+本项目在 github 上的仓库为 template 仓库，建议打开[GitHub 页面](https://github.com/NuStar-Nuclear/vuetify-admin)点击右上角的`Use this template`按钮以创建新的远程仓库，这样就免去了上述修改远程仓库地址的流程。
+:::
+
+<CodeGroup>
+  <CodeGroupItem title="YARN">
+
+```shell script:no-line-numbers
 cd front-project-name
 yarn
 ```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="NPM" active>
+
+```shell script:no-line-numbers
+cd front-project-name
+npm install
+```
+
+  </CodeGroupItem>
+</CodeGroup>
 
 ## 开发时
 
@@ -21,36 +39,41 @@ yarn
 
 如果发现前端连不上 mock server，请移步[后端 url](backendUrl.md)
 
-```shell script
+<CodeGroup>
+  <CodeGroupItem title="YARN">
+
+```shell script:no-line-numbers
 yarn mock
 ```
 
+  </CodeGroupItem>
+  <CodeGroupItem title="NPM" active>
+
+```shell script:no-line-numbers
+npm run mock
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 ### 启动开发模式进行开发
 
-```shell script
+<CodeGroup>
+  <CodeGroupItem title="YARN">
+
+```shell script:no-line-numbers
 yarn serve
 ```
 
-:::tip
-若发现缺少`/src/settings.local.ts`, 请新建此文件并写好内容，此文件为本地设置，会被 git 忽略。
+  </CodeGroupItem>
+  <CodeGroupItem title="NPM" active>
 
-```ts
-import { ISettings } from "./settings";
-
-// You can customize below settings :)
-const settings: Partial<ISettings> = {
-  devServerPort: 9527,
-  mockServerPort: 9528,
-  auth: true,
-};
-
-export default settings;
+```shell script:no-line-numbers
+npm run serve
 ```
 
-:::
-:::danger
-注意不要直接在`settings.ts`中修改
-:::
+  </CodeGroupItem>
+</CodeGroup>
 
 ## 新建页面
 
