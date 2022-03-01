@@ -17,9 +17,22 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: "Documentation of NuStar Vuetify Admin",
   themeConfig: {
     logo: "/nustar-vue.svg",
+    repo: "NuStar-Nuclear/vuetify-admin",
+    docsRepo: "NuStar-Nuclear/vuetify-admin-docs",
+    docsBranch: "master",
+    docsDir: "docs",
+    danger: "危险",
+    tip: "建议",
+    warning: "警告",
+    editLinkText: "在Github上编辑此页",
+    contributorsText: "贡献者",
+    lastUpdatedText: "最后修改时间",
+    backToHome: "回到首页",
+    openInNewWindow: "在新窗口中打开",
+    toggleDarkMode: "切换明暗模式",
     navbar: [
       { text: "指南", link: "/guide/" },
-      { text: "公司官网", link: "http://www.nustarnuclear.com" },
+      { text: "公司官网", link: "https://www.nustarnuclear.com" },
     ],
     sidebar: [
       {
