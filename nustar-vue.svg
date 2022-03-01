@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56">
+  <defs>
+    <path id="inner-pie" d="M10,26.4A19,19,0,0,0,26.4,10H10V26.4Z" />
+    <path id="outer-ring" d="M2,26.7A26.7,26.7,0,0,1,26.7,2v-2A28,28,0,0,0,0,26.7h2Z" />
+    <polygon id="v" points="10,26 10,29 21,24 21,21" />
+    <symbol id="half-4v">
+      <use xlink:href="#v" />
+      <use xlink:href="#v" transform="rotate(90, 28, 28)" />
+      <use xlink:href="#v" transform="rotate(180, 28, 28)" />
+      <use xlink:href="#v" transform="rotate(270, 28, 28)" />
+    </symbol>
+    <radialGradient id="radial-gradient" cx="28" cy="28" r="26.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0.269" stop-color="#80eec0" />
+      <stop offset="0.567" stop-color="#00dc82" />
+      <stop offset="0.857" stop-color="#41b883" />
+    </radialGradient>
+  </defs>
+  <g class="logo-inner" fill="url(#radial-gradient)">
+    <use xlink:href="#inner-pie" />
+    <use xlink:href="#inner-pie" transform="rotate(90, 28, 28)" />
+    <use xlink:href="#inner-pie" transform="rotate(180, 28, 28)" />
+    <use xlink:href="#inner-pie" transform="rotate(270, 28, 28)" />
+  </g>
+  <g class="logo-outer" style="fill:#34495e">
+    <use xlink:href="#outer-ring" />
+    <use xlink:href="#outer-ring" transform="rotate(90, 28, 28)" />
+    <use xlink:href="#outer-ring" transform="rotate(180, 28, 28)" />
+    <use xlink:href="#outer-ring" transform="rotate(270, 28, 28)" />
+  </g>
+  <g class="logo-4v" fill="#34495e">
+    <use xlink:href="#half-4v" />
+    <use xlink:href="#half-4v" transform="scale(1,-1) translate(0,-56)" />
+  </g>
+</svg>
