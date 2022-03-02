@@ -1,0 +1,44 @@
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "README.md"
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: "16"
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: ⚙️ Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: 💾 Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ env.NODE_VERSION }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ env.NODE_VERSION }}-
+            ${{ runner.os }}-node-
+
+      - name: 🔨 Generate static site
+        run: |
+          npm install
+          npm run generate
+
+      - name: 📂 Sync files
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: docs/.vuepress/dist
