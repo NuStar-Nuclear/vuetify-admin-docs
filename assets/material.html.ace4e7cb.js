@@ -1,0 +1,1 @@
+const a={key:"v-9b01f1c4",path:"/advanced/material.html",title:"\u8BBE\u8BA1\u7406\u5FF5\u4E0E\u89C4\u8303",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1646230398e3,contributors:[{name:"Yue JIN",email:"yjin@nustarnuclear.com",commits:1}]},filePathRelative:"advanced/material.md"};export{a as data};
