@@ -1,1 +1,0 @@
-const e={key:"v-cc6d4d78",path:"/guide/update.html",title:"\u66F4\u65B0",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1646230398e3,contributors:[{name:"Yue JIN",email:"yjin@nustarnuclear.com",commits:1}]},filePathRelative:"guide/update.md"};export{e as data};
