@@ -1,0 +1,1 @@
+const e={key:"v-6810ab47",path:"/guide/tsComponent.html",title:"Typescript \u7EC4\u4EF6\u5199\u6CD5",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1646226523e3,contributors:[{name:"Yue JIN",email:"40021217+kingyue737@users.noreply.github.com",commits:1}]},filePathRelative:"guide/tsComponent.md"};export{e as data};

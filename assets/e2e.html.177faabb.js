@@ -1,1 +1,0 @@
-const e={key:"v-e6d79cb0",path:"/tests/e2e.html",title:"\u7AEF\u5BF9\u7AEF\u6D4B\u8BD5",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1630471274e3,contributors:[{name:"Yue JIN",email:"yjin@nustarnuclear.com",commits:2}]},filePathRelative:"tests/e2e.md"};export{e as data};
