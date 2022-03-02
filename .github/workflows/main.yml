@@ -35,7 +35,7 @@ jobs:
       - name: 🔨 Generate static site
         run: |
           npm install
-          npm run generate
+          npm run docs:build
 
       - name: 📂 Sync files
         uses: JamesIves/github-pages-deploy-action@v4.2.5
