@@ -8,6 +8,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square)](https://gitmoji.dev)
+[<img alt="Deployed with GitHub Pages Deploy Action" src="https://img.shields.io/badge/Deployed With-🚀GitHub Pages Deploy Action-%3CCOLOR%3E?style=flat-square&color=0077b6">](https://github.com/JamesIves/github-pages-deploy-action)
 
 The documentation source of [nustar-vuetify-admin](https://docs.nustarnuclear.com/vuetify-admin-docs), powered by [VuePress 2](https://github.com/vuejs/vuepress-next).
 
