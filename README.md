@@ -27,6 +27,14 @@ npm run docs:dev
 
 open http://localhost:8080/vuetify-admin-docs/
 
+## Deployment
+
+This site is automatically deployed to [Github Pages](https://pages.github.com/) with [Github Actions](https://github.com/features/actions) on push. Although not recommended, you can manually initialize `gh-pages` branch and deploy the site via the `deploy` script in the root directory.
+
+```bash
+sh deploy.sh
+```
+
 ## Maintainer
 
 [📧 Yue JIN](mailto:yjin@nustarnuclear.com)
