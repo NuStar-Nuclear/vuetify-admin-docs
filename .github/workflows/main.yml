@@ -4,10 +4,10 @@ on:
       - master
     paths-ignore:
       - "README.md"
-name: 🚀 Deploy website on push
+name: CI
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🚀 Deploy website
     runs-on: ubuntu-latest
     env:
       NODE_VERSION: "16"
