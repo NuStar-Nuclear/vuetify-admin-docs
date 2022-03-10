@@ -1,0 +1,1 @@
+const e={key:"v-e6d8a19c",path:"/guide/structure.html",title:"\u9879\u76EE\u7ED3\u6784",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1646898476e3,contributors:[{name:"Yue JIN",email:"yuejin13@qq.com",commits:1}]},filePathRelative:"guide/structure.md"};export{e as data};
