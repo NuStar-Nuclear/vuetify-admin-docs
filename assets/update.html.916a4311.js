@@ -1,0 +1,1 @@
+const e={key:"v-cc6d4d78",path:"/guide/update.html",title:"\u66F4\u65B0",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1649633063e3,contributors:[{name:"dependabot[bot]",email:"49699333+dependabot[bot]@users.noreply.github.com",commits:1}]},filePathRelative:"guide/update.md"};export{e as data};
