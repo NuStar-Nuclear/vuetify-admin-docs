@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cc6d4d78","path":"/guide/update.html","title":"更新","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"guide/update.md"}');export{e as data};

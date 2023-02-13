@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-9b01f1c4","path":"/advanced/material.html","title":"设计理念与规范","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"advanced/material.md"}');export{a as data};

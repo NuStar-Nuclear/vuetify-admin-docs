@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6810ab47","path":"/guide/tsComponent.html","title":"Typescript 组件写法","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"guide/tsComponent.md"}');export{t as data};

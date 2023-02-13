@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2679e8fb","path":"/guide/vuex.html","title":"状态管理","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"guide/vuex.md"}');export{e as data};

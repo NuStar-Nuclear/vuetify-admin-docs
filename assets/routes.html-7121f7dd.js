@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7379e363","path":"/guide/routes.html","title":"侧边栏与路由","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"配置方法","slug":"配置方法","link":"#配置方法","children":[]}],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"guide/routes.md"}');export{e as data};

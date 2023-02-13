@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-24f31ddc","path":"/guide/backendUrl.html","title":"动态的后端 Url 配置","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1676269913000,"contributors":[{"name":"Yue JIN","email":"yjin@nustarnuclear.com","commits":1}]},"filePathRelative":"guide/backendUrl.md"}');export{e as data};
