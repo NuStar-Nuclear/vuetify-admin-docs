@@ -1,0 +1,1 @@
+const e={key:"v-acb10be2",path:"/guide/i18n.html",title:"\u56FD\u9645\u5316",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1675119968e3,contributors:[{name:"dependabot[bot]",email:"49699333+dependabot[bot]@users.noreply.github.com",commits:1}]},filePathRelative:"guide/i18n.md"};export{e as data};
