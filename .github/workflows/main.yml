@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - name: 💾 Cache node modules
-        uses: actions/cache@v3.2.4
+        uses: actions/cache@v3.2.5
         env:
           cache-name: cache-node-modules
         with:
